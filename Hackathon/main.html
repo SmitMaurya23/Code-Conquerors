@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-size:16px;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        margin:20px;
+    }
+    .user-information{
+        text-align: end;
+        margin-right:30px;
+        margin-bottom: 15px;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin : auto 40px;
+        
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    a:hover{
+        font-size:20px;
+        font-weight: 500;
+        color:black;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:150px;
+        margin-bottom: 30px;
+    }
+    .search-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        text-align: center;
+        padding: 6px 25px;
+        border-radius: 10px;
+    }
+    .search-box:hover{
+        border-color: blue;
+        color: blue;
+        font-size: 19px;
+
+    }
+    /* Slider Starts From Here */
+    .slider{
+        margin-top:50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .demo-locations{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 70px;
+        gap : 30px;
+    }
+    .cards{
+        border-radius: 10px;
+    }
+    .first-card{
+        /* border : 1px solid red; */
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    li{
+        list-style: none;
+    }
+    .cards:hover{
+    }
+    .more-details{
+        padding:5px 18px;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 10px;
+
+    }
+    .more-details:hover{
+        color:blue;
+        border-color:blue;
+        font-size:19px;
+    }
+</style>
+</head>
+<body>
+    <section class="user-information">
+        Username : <img src="" alt="Photo">
+    </section>
+    <nav class="nav-bar">
+        <div class="dashboard">
+            <ul class="list">
+                <li class="list-items"><a href="">Saved</a></li>
+                <li class="list-items"><a href="">Favourite</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" value="Search Here" class="search-box">
+        </div>
+    </nav>
+    <div class="slider">
+        <img style="height: 350px; width: 1000px;" src="./Dubai.jpeg" alt="Slider">
+    </div>
+    <div class="demo-locations">
+        <div class="first-card">
+        <img style="height: 250px; width: 250px;" src="./Chhatrapati-Shivaji-Terminus.jpg" alt="Card" class="cards">
+        <li class="desc">
+           Name : Mumbai Chattrapati Shivaji Terminus. <br>
+           Location : Mumbai. <br>
+        </li>
+        <button class="more-details">Details</button>
+        </div>
+        <div class="first-card">
+        <img style="height: 250px; width: 250px;" src="./Delhi Place.jpeg" alt="Card" class="cards">
+
+        <li class="desc">
+            Name : Delhi Place. <br>
+            Location : Delhi. <br>
+         </li>
+         <button class="more-details">Details</button>
+        </div>
+
+        <div class="first-card">
+        <img style="height: 250px; width: 250px;" src="./India Gate.jpeg" alt="Card" class="cards">
+
+        <li class="desc">
+            Name : India Gate. <br>
+            Location : Mumbai. <br>
+         </li>
+         <button class="more-details">Details</button>
+        </div>
+
+        <div class="first-card">
+        <img style="height: 250px; width: 250px;" src="./Taj Mahal.jpeg" alt="Card" class="cards">
+        <li class="desc">
+            Name : Taj Mahal. <br>
+            Location : Mumbai. <br>
+         </li>
+         <button class="more-details">Details</button>
+        </div>
+    </div>
+</body>
+</html>

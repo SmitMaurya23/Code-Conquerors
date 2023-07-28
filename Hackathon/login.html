@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        margin-top:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .form-main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+        gap:30px;
+        border:1px solid black;
+        border-radius:20px;
+        padding:35px 20px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        font-size:16px;
+    }
+    a:hover{
+        font-size:18px;
+        color: black;
+        font-weight:500;
+
+    }
+    .other-option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+    }
+    .sub{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:6px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 20px;
+
+    }
+</style>
+</head>
+<body>
+    <div class="welcome">
+        <h2 >Welcome To :</h2>
+        <img src="" alt="Logo">
+        </div>
+    <div class="form-table">
+        <h2>Login :</h2>
+        <form action="" class="form-main-box">
+            <label for="name">
+                Username:
+            <input type="text" name="name">
+            </label>
+            <label for="password">
+                Password:
+            <input type="password" name="password">
+            </label>
+            <div class="submit">
+                <button class="sub">Sign In</button>
+            </div>
+            <div class="forgot">
+                <a href="">Forgot Password</a>
+            </div>
+
+        </form>
+        <div class="other-option">
+            <img src="" alt="Google">
+            <img src="" alt="Facebook">
+            <img src="" alt="Github">
+        </div>
+    </div>
+</body>
+</html>
