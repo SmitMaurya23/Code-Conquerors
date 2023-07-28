@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dashboard-button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 70%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none; /* Hide scrollbar for modern browsers */
+            -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        }
+
+        .card {
+            width: 250px;
+            height: 200px;
+            margin-right: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DASHBOARD</h1>
+    <br><br>
+    <div class="dashboard">
+        <div class="button-container">
+            <button class="dashboard-button" id="saved-button">Saved</button>
+            <button class="dashboard-button" id="favorite-button">Favorite</button>
+        </div>
+
+        <div class="section" id="saved-section">
+            <div class="section-title">Saved</div>
+            <div class="card-container" id="saved-container">
+                <!-- Sample cards for Saved option -->
+                <div class="card"><img src="touris/tourist.png" alt=""></div>
+                <div class="card"><img src="touris/tourist.png" alt=""></div>
+                <div class="card"><img src="touris/tourist.png" alt=""></div>
+                <div class="card"><img src="touris/tourist.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="section" id="favorite-section" style="display: none;">
+            <div class="section-title">Favorite</div>
+            <div class="card-container" id="favorite-container">
+                <!-- Sample cards for Favorite option -->
+                <div class="card"><img src="touris/wildlife.jpg" alt=""></div>
+                <div class="card"><img src="touris/wildlife.jpg" alt=""></div>
+                <div class="card"><img src="touris/wildlife.jpg" alt=""></div>
+                <div class="card"><img src="touris/wildlife.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const savedButton = document.getElementById('saved-button');
+        const favoriteButton = document.getElementById('favorite-button');
+        const savedSection = document.getElementById('saved-section');
+        const favoriteSection = document.getElementById('favorite-section');
+
+        savedButton.addEventListener('click', () => {
+            savedSection.style.display = 'block';
+            favoriteSection.style.display = 'none';
+        });
+
+        favoriteButton.addEventListener('click', () => {
+            savedSection.style.display = 'none';
+            favoriteSection.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
